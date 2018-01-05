@@ -4,13 +4,20 @@ import static org.junit.Assert.*;
 
 public class PartyTest {
 
+//    @Test
+//    public void howManyGuests_enterNumber_getNumber() throws Exception {
+//        Party testParty = new Party();
+//        Integer expected = 100;
+//    }
+
     @Test
     public void howManyGuests_enterNumber_getNumber() throws Exception {
         Party testParty = new Party();
-        Integer expected = 100;
+        Integer guestCount = 1;
+       assertEquals(expected(10));
+
 
 
 
     }
-
 }

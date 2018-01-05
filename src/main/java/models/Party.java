@@ -1,30 +1,22 @@
 package models;
-public class Party{
-
-public int guest;
-
-public int meal;
-public int drink;
-public String entertainment;
-public int price;
+public class Party {
+    public Integer guestTotal;
+    public Integer mealTotal;
+    public Integer drinkTotal;
+    public String entertainmentYesNo;
 
 
+    guestTotal = guest;
+    mealTotal = meal;
+    drinkTotal = drink;
+    entertainmentYesNo = YesNo;
 
-//    private Integer Info;
-//    //private List<String> guestArrayList = new ArrayList<>();
-//    Integer[] GuestInfo = {guest, meal, drink};
-//    this.price =(this.guest + this.meal + this.drink);
 
-//public Party(guest, meal, drink, entertainment, price) {
-//        this.guest = 1;
-//        this.meal = String meal;
-//        this.drink = String drink;
-//        this.entertainment = String entertainment;
-//        this.price; int price;
-//        }
 
-public int totalCost(int price){
-        return (this.price = price);
-        }
 
-        }
+public int guestCount;
+    return guestTotal * 10;
+
+
+
+public Integer price

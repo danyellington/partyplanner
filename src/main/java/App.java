@@ -10,12 +10,12 @@ public class App {
 
     public static void main(String[] args) {
         boolean programRunning = true;
-        //public class Party {
+            //public class Party {
 
-            Party guest = new Party();
-            Party meal = new Party();
-            Party drink = new Party();
-            Party entertainment = new Party();
+//            Party guest = new Party();
+//            Party meal = new Party();
+//            Party drink = new Party();
+//            //Party entertainment = new Party();
 
 
 //            ArrayList<PartyCost> PartyCost = new ArrayList<PartyCost>();
@@ -31,9 +31,10 @@ public class App {
 
                 try{
                     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-                    String inputString = bufferedReader.readLine();
+                    String guestTotal = bufferedReader.readLine();
 
-                    System.out.println("Ok, great, " + inputString + " guests. How many meals will be ordered?");
+                    System.out.println("Ok, great, " + guestTotal + " guests. How many meals will be ordered?");
+                   // inputString.equals(guest);
 
                 }
                 catch(IOException e)
@@ -45,6 +46,7 @@ public class App {
                     String inputMealString = bufferedReader.readLine();
 
                     System.out.println("Excellent! " + inputMealString + " meals. How many drinks will be ordered?");
+                    inputMealString.equals(meal);
 
                 }
                 catch(IOException e)
@@ -56,6 +58,7 @@ public class App {
                     String inputDrinkString = bufferedReader.readLine();
 
                     System.out.println("Also,  " + inputDrinkString + " Drinks.");
+                    drink.equals(inputDrinkString);
 
 
                 }
@@ -63,6 +66,7 @@ public class App {
                 {
                     e.printStackTrace();
                 }
+
                 try{
                     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
                     String price = bufferedReader.readLine();
