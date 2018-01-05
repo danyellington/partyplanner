@@ -1,25 +1,30 @@
 package models;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+public class Party{
 
-public class Party {
-    public static void main(String[] args) {
-        System.out.println("How many guests will be attending?");
-        try{
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-            String stringNumber = bufferedReader.readLine();
-            Integer yourNumber = Integer.parseInt(stringNumber);
-            // Integer yourDoubledNumber = yourNumber * 2;
+public int guest;
 
-            System.out.println(yourNumber + " guests");
+public int meal;
+public int drink;
+public String entertainment;
+public int price;
+
+
+
+//    private Integer Info;
+//    //private List<String> guestArrayList = new ArrayList<>();
+//    Integer[] GuestInfo = {guest, meal, drink};
+//    this.price =(this.guest + this.meal + this.drink);
+
+//public Party(guest, meal, drink, entertainment, price) {
+//        this.guest = 1;
+//        this.meal = String meal;
+//        this.drink = String drink;
+//        this.entertainment = String entertainment;
+//        this.price; int price;
+//        }
+
+public int totalCost(int price){
+        return (this.price = price);
+        }
 
         }
-        catch(IOException e)
-        {
-            e.printStackTrace();
-        }
-    }
-
-
-}
