@@ -20,6 +20,8 @@ Program can add cost of drink and meal to each guest
 
 Program can divide and subtract from total for discount
 
+Program can divide and subtract from total for entertainment
+
 Program can return specific price based on user input
 
 
