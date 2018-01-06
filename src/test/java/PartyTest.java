@@ -13,7 +13,8 @@ public class PartyTest {
     @Test
     public void howManyGuests_enterNumber_getNumber() throws Exception {
         Party testParty = new Party(12, 12, 12, "yes", "no");
-
-
     }
+
+    @Test
+    public void
 }
