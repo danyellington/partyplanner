@@ -12,11 +12,7 @@ public class PartyTest {
 
     @Test
     public void howManyGuests_enterNumber_getNumber() throws Exception {
-        Party testParty = new Party();
-        Integer guestCount = 1;
-       assertEquals(expected(10));
-
-
+        Party testParty = new Party(12, 12, 12, "yes", "no");
 
 
     }

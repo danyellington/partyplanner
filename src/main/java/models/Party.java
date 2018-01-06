@@ -1,22 +1,26 @@
 package models;
+
 public class Party {
-    public Integer guestTotal;
-    public Integer mealTotal;
-    public Integer drinkTotal;
-    public String entertainmentYesNo;
+    public int guest;
+    public int meal;
+    public int drink;
+    public String entertainment;
+    public String coupon;
 
 
-    guestTotal = guest;
-    mealTotal = meal;
-    drinkTotal = drink;
-    entertainmentYesNo = YesNo;
-
-
-
-
-public int guestCount;
-    return guestTotal * 10;
+//
+//    public Integer price = guest * 10;
+//        return price;
 
 
 
-public Integer price
+    public Party(int guest, int meal, int drink, String entertainment, String coupon) {
+        this.guest = guest;
+        this.meal = meal;
+        this.drink = drink;
+        this.entertainment = entertainment;
+        this.coupon = coupon;
+
+    }
+
+}

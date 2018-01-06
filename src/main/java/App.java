@@ -46,7 +46,7 @@ public class App {
                     String inputMealString = bufferedReader.readLine();
 
                     System.out.println("Excellent! " + inputMealString + " meals. How many drinks will be ordered?");
-                    inputMealString.equals(meal);
+//                    inputMealString.equals(meal);
 
                 }
                 catch(IOException e)
@@ -58,7 +58,7 @@ public class App {
                     String inputDrinkString = bufferedReader.readLine();
 
                     System.out.println("Also,  " + inputDrinkString + " Drinks.");
-                    drink.equals(inputDrinkString);
+//                    drink.equals(inputDrinkString);
 
 
                 }
