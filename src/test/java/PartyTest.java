@@ -12,9 +12,10 @@ public class PartyTest {
 
     @Test
     public void howManyGuests_enterNumber_getNumber() throws Exception {
-        Party testParty = new Party(12, 12, 12, true, "no");
+        Party testParty = new Party(10,10,10, true, "finish");
+        assertEquals(true, testParty instanceof Party);
     }
 
-    @Test
-    public void
+//    @Test
+//    public void
 }
