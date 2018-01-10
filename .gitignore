@@ -44,8 +44,11 @@ gradle
 gradlew.bat
 gradlew
 settings.gradle
+build.gradle
 
 # IntelliJ #
 ############
 .idea
 .idea/
+.xml
+.iml
