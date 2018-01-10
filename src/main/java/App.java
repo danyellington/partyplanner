@@ -10,81 +10,43 @@ public class App {
 
     public static void main(String[] args) {
         boolean programRunning = true;
-            //public class Party {
+        while(programRunning) {
 
-//            Party guest = new Party();
-//            Party meal = new Party();
-//            Party drink = new Party();
-//            //Party entertainment = new Party();
+            System.out.println("How many guests will be attending?");
 
+            try{
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+                String guestTotal = bufferedReader.readLine();
 
-//            ArrayList<PartyCost> PartyCost = new ArrayList<PartyCost>();
-//
-//            PartyCost.add(guest)
-//                    PartyCost.add(meal)
-//                    PartyCost.add(drink)
-//                    PartyCost.add(entertainment);
+                System.out.println("Ok, great, " + guestTotal + " guests. How many meals will be ordered?");
+                String inputMealString = bufferedReader.readLine();
+                System.out.println("Excellent! " + inputMealString + " meals. How many drinks will be ordered?");
+                String inputDrinkString = bufferedReader.readLine();
+                System.out.println("Also,  " + inputDrinkString + " Drinks. Do you want to include a DJ for $300? ('yes' or 'no'");
 
-            while(programRunning) {
+                String inputEntertainment = bufferedReader.readLine();
+                boolean yesNo = false;
 
-                System.out.println("How many guests will be attending?");
-
-                try{
-                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-                    String guestTotal = bufferedReader.readLine();
-
-                    System.out.println("Ok, great, " + guestTotal + " guests. How many meals will be ordered?");
-                   // inputString.equals(guest);
-
-                }
-                catch(IOException e)
-                {
-                    e.printStackTrace();
-                }
-                try{
-                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-                    String inputMealString = bufferedReader.readLine();
-
-                    System.out.println("Excellent! " + inputMealString + " meals. How many drinks will be ordered?");
-//                    inputMealString.equals(meal);
-
-                }
-                catch(IOException e)
-                {
-                    e.printStackTrace();
-                }
-                try{
-                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-                    String inputDrinkString = bufferedReader.readLine();
-
-                    System.out.println("Also,  " + inputDrinkString + " Drinks.");
-//                    drink.equals(inputDrinkString);
-
-
-                }
-                catch(IOException e)
-                {
-                    e.printStackTrace();
+                if (inputEntertainment.equals("yes")){
+                    yesNo = true;
                 }
 
-                try{
-                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-                    String price = bufferedReader.readLine();
+                System.out.println("Enter your coupon code ('50for100' or '$50off' or enter 'finish' if no coupon.");
+                String inputCoupon = bufferedReader.readLine();
 
-                    System.out.println("Wonderful, your final cost is,  ");
-                    programRunning = false;
+                System.out.println(inputCoupon);
 
-                }
-                catch(IOException e)
-                {
-                    e.printStackTrace();
-                }
+                Party newParty = new Party(Integer.parseInt(guestTotal), Integer.parseInt(inputMealString), Integer.parseInt(inputDrinkString), yesNo, inputCoupon);
+
+                System.out.println("Wonderful, your final cost is,  $" + newParty.calculateFullPrice());
+                programRunning = false;
+
             }
+            catch(IOException e)
+            {
+                e.printStackTrace();
             }
-
+        }
     }
 
-
-
-
-
+}
