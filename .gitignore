@@ -45,10 +45,11 @@ gradlew.bat
 gradlew
 settings.gradle
 build.gradle
+.idea
+.iml
 
 # IntelliJ #
 ############
-.idea
 .idea/
-.xml
-.iml
+
+
