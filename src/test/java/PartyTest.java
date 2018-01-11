@@ -16,7 +16,7 @@ public class PartyTest {
     @Test
     public void guestTotal_TotalGuest_getGuest() throws Exception {
         Party testParty = new Party(10,10,10, true, "finish");
-        assertEquals(null, testParty.getGuest());
+        assertEquals(10, testParty.getGuest());
     }
 
     @Test
