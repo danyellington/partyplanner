@@ -52,7 +52,7 @@ public class PartyTest {
 
         @Test
     public void couponDiscount_TotalCouponCost_get50for100Discount() throws Exception {
-        Party testParty = new Party(10, 10, 10, true, "50for100");
+        Party testParty = new Party(60, 10, 10, true, "50for100");
         assertEquals(500 , testParty.calculateFullPrice());
     }
 
