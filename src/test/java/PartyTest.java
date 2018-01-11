@@ -22,7 +22,7 @@ public class PartyTest {
     @Test
     public void drinkCost_TotalDrinkCost_getPrice() throws Exception {
         Party testParty = new Party(10, 10, 10, true, "finish");
-        assertEquals(250, testParty.calculateDrinkPrice());
+        assertEquals(50, testParty.calculateDrinkPrice());
     }
 }
 
