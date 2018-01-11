@@ -11,12 +11,6 @@ public class Party {
     private int totalPrice;
 
 
-//
-//    public Integer price = guest * 10;
-//        return price;
-
-
-
     public Party(int guest, int meal, int drink, boolean entertainment, String coupon) {
         this.guest = guest;
         this.meal = meal;
