@@ -36,6 +36,12 @@ public class PartyTest {
         Party testParty = new Party(10, 10, 10, false, "finish");
         assertEquals(0, testParty.calculateEntertainmentPrice());
     }
+
+    @Test
+    public void couponDiscount_TotalCouponCost_getDiscount() throws Exception {
+        Party testParty = new Party(10, 10, 10, true, "finish");
+        assertEquals(50, testParty.calculateCouponDiscount());
+    }
 }
 
 
