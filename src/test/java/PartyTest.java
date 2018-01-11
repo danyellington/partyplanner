@@ -8,9 +8,15 @@ public class PartyTest {
 
 
     @Test
-    public void howManyGuests_enterNumber_getNumber() throws Exception {
+    public void createParty_party_getParty() throws Exception {
         Party testParty = new Party(10,10,10, true, "finish");
         assertEquals(true, testParty instanceof Party);
+    }
+
+    @Test
+    public void guestTotal_TotalGuest_getGuest() throws Exception {
+        Party testParty = new Party(10,10,10, true, "finish");
+        assertEquals(null, testParty.getGuest());
     }
 
     @Test
@@ -37,12 +43,6 @@ public class PartyTest {
         assertEquals(0, testParty.calculateEntertainmentPrice());
     }
 
-    @Test
-    public void couponDiscount_TotalCouponCost_getDiscount() throws Exception {
-        Party testParty = new Party(10, 10, 10, true, "finish");
-        assertEquals(0, testParty.calculateCouponDiscount());
-    }
-
 
     @Test
     public void totalPrice_TotalCost_getTotal() throws Exception {
@@ -50,14 +50,20 @@ public class PartyTest {
         assertEquals(600, testParty.calculateFullPrice());
     }
 
-        @Test
-    public void couponDiscount_TotalCouponCost_get50for100Discount() throws Exception {
+    @Test
+    public void couponDiscount_NoCouponDiscount_getDiscount() throws Exception {
+        Party testParty = new Party(10, 10, 10, true, "finish");
+        assertEquals(0, testParty.calculateCouponDiscount());
+    }
+
+    @Test
+    public void couponDiscount_TotalCouponDiscount_get50for100Discount() throws Exception {
         Party testParty = new Party(60, 10, 10, true, "50for100");
         assertEquals(500 , testParty.calculateFullPrice());
     }
 
     @Test
-    public void couponDiscount_TotalCouponCost_get$50offDiscount() throws Exception {
+    public void couponDiscount_TotalCouponDiscount_get$50offDiscount() throws Exception {
         Party testParty = new Party(60, 10, 10, true, "$50off");
         assertEquals(550 , testParty.calculateFullPrice());
     }
