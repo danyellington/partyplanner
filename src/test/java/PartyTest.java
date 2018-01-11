@@ -19,6 +19,11 @@ public class PartyTest {
         assertEquals(250, testParty.calculateMealPrice());
     }
 
+    @Test
+    public void drinkCost_TotalDrinkCost_getPrice() throws Exception {
+        Party testParty = new Party(10, 10, 10, true, "finish");
+        assertEquals(250, testParty.calculateDrinkPrice());
+    }
 }
 
 
