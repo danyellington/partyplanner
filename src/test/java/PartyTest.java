@@ -16,7 +16,7 @@ public class PartyTest {
     @Test
     public void mealCost_TotalMealCost_getPrice() throws Exception {
         Party testParty = new Party(10,10,10, true, "finish");
-        assertEquals(10, testParty.calculateMealPrice());
+        assertEquals(250, testParty.calculateMealPrice());
     }
 
 }
