@@ -50,11 +50,11 @@ public class PartyTest {
         assertEquals(600, testParty.calculateFullPrice());
     }
 
-    //    @Test
-//    public void couponDiscount_TotalCouponCost_get50for100Discount() throws Exception {
-//        Party testParty = new Party(10, 10, 10, true, "50for100");
-//        assertEquals( , testParty.calculateCouponDiscount());
-//    }
+        @Test
+    public void couponDiscount_TotalCouponCost_get50for100Discount() throws Exception {
+        Party testParty = new Party(10, 10, 10, true, "50for100");
+        assertEquals(500 , testParty.calculateFullPrice());
+    }
 
 
 }
