@@ -26,9 +26,15 @@ public class PartyTest {
     }
 
     @Test
-    public void entertainmentCost_TotalEntertainmentCost_getPrice() throws Exception {
-        Party testParty = new Party(10, 10, 10, "yes", "finish");
-        assertEquals(250, testParty.calculateEntertainmentPrice());
+    public void entertainmentCost_TotalEntertainmentCostTrue_getPrice() throws Exception {
+        Party testParty = new Party(10, 10, 10, true, "finish");
+        assertEquals(300, testParty.calculateEntertainmentPrice());
+    }
+
+    @Test
+    public void entertainmentCost_TotalEntertainmentCostFalse_getPrice() throws Exception {
+        Party testParty = new Party(10, 10, 10, false, "finish");
+        assertEquals(0, testParty.calculateEntertainmentPrice());
     }
 }
 
