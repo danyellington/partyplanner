@@ -1,11 +1,11 @@
-###Party Planner
+### Party Planner
 This is an application designed to allow a user to plan a party for multiple guests, Version 1: 08/12/17
 
-#####By: Danyel Murray
+##### By: Danyel Murray
 Description
 This program is an application to plan an event and calculate the cost based on attendance.
 
-####Specifications
+#### Specifications
 Program can receive and store a user's input
 
 Program can add number of guests
@@ -26,14 +26,14 @@ Program can return specific price based on user input
 
 
 
-####Technologies used:
+#### Technologies used:
 -Java
 
 
-####Known bugs:
+#### Known bugs:
 Please alert to any bugs in my program
 
-#####Contact Details:
+##### Contact Details:
 Danyel: danyelmurray1987@gmail.com
 
 License
